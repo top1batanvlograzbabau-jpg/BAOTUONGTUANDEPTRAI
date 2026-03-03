@@ -1,0 +1,99 @@
+/* Reset căn bản */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    /* Sử dụng font hệ thống không cần tải từ Google */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f1; 
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    /* Dùng màu nền và gradient giả lập vân giấy thay vì link ảnh pattern */
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), #abc88d;
+    border-bottom: 2px dashed #4a7c44;
+}
+
+header h1 {
+    /* Dùng font viết tay có sẵn trên hầu hết các máy */
+    font-family: 'Brush Script MT', 'Comic Sans MS', cursive;
+    font-size: 3.8rem;
+    color: #2d5a27;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Thẻ báo tường */
+.card {
+    background: #fff;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 5px solid #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #ddd; /* Hiện màu xám nếu không có mạng tải ảnh */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-family: 'Georgia', serif;
+    color: #c05d2e;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background-color: #4a7c44;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #355e31;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Style cho dòng ghi chú nguồn ảnh */
+.photo-credit {
+    font-family: 'Georgia', serif; /* Dùng font có chân cho hoài cổ */
+    font-style: italic;
+    font-size: 11px;
+    color: #999;
+    margin-top: -10px; /* Kéo nó sát lên ảnh */
+    margin-bottom: 10px;
+    display: block;
+}
