@@ -1,9 +1,7 @@
-/* Reset căn bản */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    /* Sử dụng font hệ thống không cần tải từ Google */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
     background-color: #f4f7f1; 
     color: #333;
     line-height: 1.6;
@@ -12,16 +10,17 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    /* Dùng màu nền và gradient giả lập vân giấy thay vì link ảnh pattern */
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), #abc88d;
     border-bottom: 2px dashed #4a7c44;
 }
 
 header h1 {
-    /* Dùng font viết tay có sẵn trên hầu hết các máy */
-    font-family: 'Brush Script MT', 'Comic Sans MS', cursive;
-    font-size: 3.8rem;
+    /* Trebuchet MS là font có sẵn trên Windows, nhìn nghệ thuật và hiện đại hơn Arial */
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    font-size: 3.5rem;
     color: #2d5a27;
+    font-weight: bold;
+    letter-spacing: -1px;
 }
 
 .container {
@@ -32,7 +31,6 @@ header h1 {
     flex-wrap: wrap;
 }
 
-/* Thẻ báo tường */
 .card {
     background: #fff;
     width: 300px;
@@ -51,7 +49,7 @@ header h1 {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    background-color: #ddd; /* Hiện màu xám nếu không có mạng tải ảnh */
+    background-color: #ddd;
 }
 
 .card-content {
@@ -60,7 +58,7 @@ header h1 {
 }
 
 .card-content h2 {
-    font-family: 'Georgia', serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: #c05d2e;
     margin-bottom: 10px;
 }
@@ -74,6 +72,7 @@ header h1 {
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
@@ -87,13 +86,12 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Style cho dòng ghi chú nguồn ảnh */
 .photo-credit {
-    font-family: 'Georgia', serif; /* Dùng font có chân cho hoài cổ */
+    font-family: Georgia, serif;
     font-style: italic;
     font-size: 11px;
     color: #999;
-    margin-top: -10px; /* Kéo nó sát lên ảnh */
+    margin-top: -10px;
     margin-bottom: 10px;
     display: block;
 }
