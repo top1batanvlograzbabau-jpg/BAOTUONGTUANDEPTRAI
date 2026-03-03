@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f7f1; 
     color: #333;
     line-height: 1.6;
@@ -15,12 +15,11 @@ header {
 }
 
 header h1 {
-    /* Trebuchet MS là font có sẵn trên Windows, nhìn nghệ thuật và hiện đại hơn Arial */
-    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-    font-size: 3.5rem;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 3.2rem;
     color: #2d5a27;
-    font-weight: bold;
-    letter-spacing: -1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .container {
@@ -58,9 +57,10 @@ header h1 {
 }
 
 .card-content h2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Times New Roman", Times, serif;
     color: #c05d2e;
     margin-bottom: 10px;
+    font-size: 1.8rem;
 }
 
 .btn {
@@ -72,7 +72,7 @@ header h1 {
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .btn:hover {
@@ -87,9 +87,9 @@ footer {
 }
 
 .photo-credit {
-    font-family: Georgia, serif;
+    font-family: "Times New Roman", Times, serif;
     font-style: italic;
-    font-size: 11px;
+    font-size: 12px;
     color: #999;
     margin-top: -10px;
     margin-bottom: 10px;
