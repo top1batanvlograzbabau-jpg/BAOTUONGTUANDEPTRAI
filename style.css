@@ -123,7 +123,7 @@ footer {
     margin: 40px auto;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
     padding: 20px;}
 
 .detail-section:nth-child(even) {
@@ -134,7 +134,7 @@ footer {
     border-radius: 10px;
     box-shadow: 15px 15px 0 #abc88d; /* Đổ bóng kiểu báo tường */
     max-width: 500px;
-    height: 350px;
+    max-height: 300px;
     object-fit: cover;}
 
 .detail-text {
@@ -179,7 +179,8 @@ footer {
     .img-group {
     flex: 1;
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+    gap: 30px;}
 
 .image-source {
     display: block;
